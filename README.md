@@ -4,7 +4,7 @@
 
 Using Terraform 0.12 export your AWS KEYs and:
 
-- cd environments/aws/dev
+- cd environments/dev
 - terraform init
 - terraform apply -auto-approve
 
