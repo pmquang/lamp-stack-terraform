@@ -152,7 +152,7 @@ module "asg" {
   image_id = local.stack.wordpress_node.image_id
   instance_type = local.stack.wordpress_node.instance_type
   security_groups = [module.sg-wordpress-node.this_security_group_id]
-  // load_balancers = [module.elb.this_elb_id]
+  load_balancers = [module.elb.this_elb_id]
 
   root_block_device = [
     {
